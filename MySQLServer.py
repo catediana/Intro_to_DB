@@ -1,4 +1,4 @@
-#importing the mysql connector
+# Importing the MySQL connector
 import mysql.connector
 
 def create_database():
@@ -20,9 +20,9 @@ def create_database():
         print(f"Error: {e}")
 
     finally:
-
-        conn.close()
-        print("MySQL connection closed.")
+        #if 'conn' in locals() and conn.is_connected():  # Safe check before closing
+            conn.close()
+            print("MySQL connection closed.")
 
 if __name__ == "__main__":
     create_database()
