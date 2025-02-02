@@ -21,7 +21,7 @@ def create_database():
 
     finally:
         #if 'conn' in locals() and conn.is_connected():  # Safe check before closing
-            conn.close()
+            #conn.close()
             print("MySQL connection closed.")
 
 if __name__ == "__main__":
